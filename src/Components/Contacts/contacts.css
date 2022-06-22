@@ -1,0 +1,49 @@
+.contact-form{
+   display: flex;
+   margin: 4rem 20rem 0 15rem;
+   justify-content: space-between;
+}
+.c-right form{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+}
+form>input, form>textarea{
+   width: 20rem;
+   margin-top: 1rem;
+   border: 2px solid var(--orange);
+   border-radius: 8px;
+}
+form>input:nth-child(1){
+   margin-top: 0;
+}
+form>input{
+   padding: 1rem;
+}
+form>textarea{
+   padding: 0.5rem 1rem 2.5rem 1rem;
+}
+form>input:nth-child(4){
+   width: 6rem;
+   display: block;
+   margin: 0 auto;
+   margin-top: 2.5rem;
+}
+input::placeholder, textarea::placeholder{
+   color: rgb(128, 128, 128);
+   font-family: 'Josefin Sans', sans-serif;
+}
+form span{
+   margin: 2rem auto;
+}
+
+
+@media screen and (max-width: 480px){
+   .contact-form{
+      display: unset;
+   }
+   .c-blur1{
+      display: none;
+   }
+}
